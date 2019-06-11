@@ -1,0 +1,49 @@
+footer-ufpso {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    color: #c5c5c5;
+    .copy {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        .icon-display {
+            font-size: 2em;
+            padding: 0 .5em;
+        }
+        @media(max-width:420px) {
+            .icon-display {
+                font-size: 1.6em;
+                padding: .3em;
+            }
+        }
+        .by {
+            font-size: .8em;
+            font-family: 'Myriad Pro';
+            margin-bottom: .2em;
+            text-align: left;
+            text-decoration: none;
+        }
+        .division {
+            text-decoration: none;
+            text-align: left;
+            font-size: .8em;
+            font-family: 'Myriad Pro Bold';
+        }
+    }
+    .version {
+        flex: 1;
+        text-align: right;
+        padding: 0 0 0 .5em;
+        font-size: .8em;
+        font-family: 'Myriad Pro Bold';
+        .imagenUFPSO {
+            vertical-align: middle;
+            max-width: 190px;
+            background: none;
+            width: 100%;
+            contain: none;
+        }
+    }
+}

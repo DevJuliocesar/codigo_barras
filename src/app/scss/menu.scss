@@ -1,0 +1,155 @@
+/*_______________________________________________*/
+
+.activateHighLight {
+  border-left: 5px red solid;
+  padding-left: 11px;
+  background-color: map-get($colors, light);
+  font-weight: bold;
+}
+
+.activateHighLight i {
+  color: map-get($colors, ufpso);
+}
+
+.desactivadoMenu {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease-in .2s;
+}
+
+.desactivadoMenu>button {
+  padding-left: 30px;
+}
+
+.activadoMenu {
+  height: 150px;
+  transition: height ease-in .2s;
+}
+
+.texto_siaMenu {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-family: "Myriad Pro Bold";
+  text-align: center;
+  cursor: default;
+  background: map-get($colors, ufpso);
+  padding-bottom: 0;
+  box-shadow: 0 4px 3px -1px rgb(177, 177, 177);
+}
+
+.texto_siaMenu span:first-child {
+  margin-top: 10px;
+  position: relative;
+  display: block;
+  background-color: white; // color: white;
+  color: map-get($colors, ufpso);
+  font-size: 1.2em;
+  height: 1.4em;
+  line-height: 1.6em;
+  text-shadow: 0 0.01em 0.05em #505050;
+  box-shadow: 0 0.08em 0.06em 0 rgba(78, 78, 78, 0.75);
+}
+
+.texto_siaMenu span:last-child {
+  position: relative;
+  display: block; // background-color: transparent;
+  background-color: transparent; // color: #EC1C21;
+  color: white;
+  text-shadow: 0 0.01em 0.05em #505050;
+  font-size: 2.5em;
+}
+
+//---------------------------
+.foto {
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+.contentPerfilMenu {
+  border-radius: 0 50px 50px 0;
+  height: 7em;
+  margin: 10px 0;
+  font-size: 14px;
+  overflow: visible;
+  position: relative;
+  .perfil-fondo {
+    width: 100%;
+    height: 3.5em;
+    background-color: map-get($colors, ufpso);
+    border-radius: 0 50px 0 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .perfil-contenido {
+    z-index: 2;
+    display: flex;
+    position: relative;
+    border-radius: 0px 50px 0 0;
+    .contenedor-foto {
+      margin: 0 .5em 0 0;
+      max-width: 3.5em;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .cardFoto {
+        position: absolute;
+        left: -3.5em;
+        height: 7em;
+        width: 7em;
+        border: 3px solid white;
+        border-radius: 100%;
+        box-shadow: 1px 1px 10px 0 gray;
+        background: white;
+        overflow: hidden;
+      }
+    }
+    .contenedor-texto {
+      flex: 2;
+      font-family: 'Myriad Pro Bold';
+      border-radius: 0px 50px 0 0;
+      .cardFondo {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        color: white;
+        height: 3.5em;
+        border-radius: 0px 50px 0 0;
+      }
+      .cardFoot {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        line-height: 2em;
+        height: 3.5em;
+      }
+    }
+  }
+}
+
+.optionIcon {
+  color: white;
+}
+
+ion-title {
+  font-family: 'Myriad Pro Bold';
+}
+
+ion-card-header {
+  font-family: 'Myriad Pro Bold';
+}
+
+ion-app.md [padding] .scroll-content {
+  overflow: scroll;
+}
+
+.menu-inner {
+  contain: none !important;
+}
+
+button i {
+  margin-right: 0.5em;
+}

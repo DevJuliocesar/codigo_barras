@@ -1,0 +1,43 @@
+/*_________________tabs de paginas_______________*/
+
+super-tabs-toolbar>ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button {
+    text-transform: capitalize;
+}
+
+super-tabs-toolbar>ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button.title-and-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding-top: 0px;
+}
+
+super-tabs-toolbar>ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button.title-and-icon ion-icon {
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+super-tabs-container {
+    height: 100% !important;
+}
+
+
+/*_________________Badges_______________*/
+
+ion-badge {
+    padding: 5px 8px 3px 8px;
+}
+
+
+/*________________Cargador________________*/
+
+.cargador {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/*__________________Space Fotter__________________*/
+
+[beforeFotter] {
+    height: 56px;
+}
