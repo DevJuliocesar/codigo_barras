@@ -85,5 +85,5 @@
     <plugin name="phonegap-plugin-barcodescanner" spec="^8.0.0" />
     <allow-navigation href="http://192.168.1.46:8100" />
     <allow-navigation href="http://172.25.150.202:8100" />
-    <engine name="android" spec="~7.0.0" />
+    <engine name="android" spec="7.0.0" />
 </widget>
